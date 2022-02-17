@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> css variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+      #header{
+          width: 90%;
+          height: 100vh;
+          margin: 0 auto;
+         background: linear-gradient(57deg,#00c6a7,#1e4d92);
+         clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+      }
+      .header-container{
+          display: flex;
+          flex-wrap: wrap;
+          position: relative;
+          top: 10%;
+      }
+      .nav-div{
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .nav-left{
+    flex-basis: 35%;
+    height: 40%;
+    text-align: center;
+      }
+      .nav-left img{
+        width: 24%;
+        height: 24%;
+        margin-top: 5px;
+      }
+      .nav-menu{
+          flex-basis: 60%;
+          margin-top: 15px;
+          text-align: right;
+      }
+      .nav-menu a{
+        text-decoration: none;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    text-transform: capitalize;
+    padding-right: 70px;
+    font-weight: bold;
+      }
+      .nav-menu a:hover{
+        
+        color: black;
+        transition: all 0.4s ease-in-out;
+      }
+      .left-side{
+          flex-basis: 50%;
+          position:relative;
+          left: 4%;
+          
+      }
+      .left-side img{
+          width: 90%;
+      }
+      .right-side{
+        flex-basis: 50%;
+    text-align: center;
+    margin-top: 15px;
+      }
+      .right-side h1{
+          font-size: 3rem;
+          font-family:monospace;
+          color: white;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: bold;
+          padding: 10px;
+      }
+      .right-side p{
+        font-size: 12px;
+    color: white;
+    text-transform: capitalize;
+    font-family: cursive;
+   
+    text-align: center;
+    padding: 5px;
+      }
+      
+      .right-side button{
+        margin-top: 30px;
+    width: 122px;
+   border-radius: 3px;
+   border: 1px solid white;
+    height: 46px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: 0;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(
+57deg
+, #00c6a7, #1e4d92);
+      }
+      .right-side button:hover{
+        background: linear-gradient(57deg,#1e4d92,#00c6a7);
+      }
+    </style>
+</head>
+<body>
+  <section id="header">
+      <div class="nav-div">
+          <div class="nav-left">
+            <img src="images/unnamed (1).png" alt="">
+          </div>
+          <div class="nav-menu">
+            
+                    <a href="#"> Home</a>
+              
+                    <a href="#"> 
+                        services
+                    </a>
+                 
+                    <a href="#"> About </a>
+            
+                    <a href="#"> Contact</a>
+             
+          </div>
+      </div>
+    <div class="header-container">
+
+        <div class="left-side">
+            <img src="images/pngaaa.com-608251.png" alt="">
+
+        </div>
+        <div class="right-side">
+            <h1>our modern website</h1>
+            <p>we are the best modern website developers company </p>
+            <button> welcome</button>
+           </div>
+    </div>
+
+
+    
+
+
+  </section>
+
+
+</body>
+</html>
